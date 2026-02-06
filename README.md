@@ -2,7 +2,7 @@
 
 Sistem Manajemen Karyawan (CMS) sederhana yang dibangun untuk memenuhi Technical Test Internship Program di PT Aksamedia Mulia Digital. Proyek ini mencakup fitur autentikasi, manajemen data karyawan (CRUD), pencarian, dan sistem paginasi.
 
-## 🛠 Tech Stack
+## Tech Stack
 
 **Frontend:**
 - React.js (Vite)
