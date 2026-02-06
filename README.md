@@ -22,28 +22,25 @@ Sistem Manajemen Karyawan (CMS) sederhana yang dibangun untuk memenuhi Technical
 - **Pencarian & Filter**: Mencari data pegawai berdasarkan nama secara real-time.
 - **Paginasi**: Navigasi data antar halaman yang efisien.
 
-## 📦 Cara Instalasi
+## Panduan Instalasi
 
-### 1. Persiapan Backend (Laravel)
-1. Clone repository ini.
-2. Masuk ke folder backend: `cd aksamedia-api`.
-3. Install dependencies: `composer install`.
-4. Salin file environment: `cp .env.example .env`.
-5. Buat database baru di MySQL dengan nama `aksamedia_db`.
-6. Konfigurasi `.env` (DB_DATABASE, DB_USERNAME, DB_PASSWORD).
-7. Jalankan migrasi & seeders: `php artisan migrate --seed`.
-8. Jalankan server: `php artisan serve`.
-9. Link storage: `php artisan storage:link`.
+### 1. Persiapan Database
+1. Buat database baru di MySQL dengan nama `aksamedia_test`.
+2. Import file database yang tersedia di: `/database/aksamedia_test.sql`.
+3. Pastikan tabel telah terbuat dengan struktur yang benar.
 
-### 2. Persiapan Frontend (React)
-1. Masuk ke folder frontend: `cd aksamedia-frontend`.
-2. Install dependencies: `npm install`.
-3. Buat file `.env` di root folder frontend:
-   ```env
-   VITE_API_BASE_URL=http://localhost:8000
-   VITE_API_URL=http://localhost:8000/api
-4. Jalankan aplikasi: npm run dev
+### 2. Konfigurasi Backend (Laravel)
+1. Masuk ke direktori backend.
+2. Jalankan `composer install` untuk mengunduh dependencies.
+3. Sesuaikan file `.env` (DB_DATABASE, DB_USERNAME, DB_PASSWORD).
+4. Jalankan `php artisan storage:link` untuk mengaktifkan akses foto profil.
+5. Jalankan `php artisan serve`.
 
+### 3. Konfigurasi Frontend (React)
+1. Masuk ke direktori frontend.
+2. Jalankan `npm install`.
+3. Pastikan konfigurasi API URL mengarah ke server Laravel (default: http://localhost:8000/api).
+4. Jalankan `npm run dev`.
 **AKUN DEMO**
 Username: admin
 Password: pastibisa
